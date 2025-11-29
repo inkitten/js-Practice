@@ -23,8 +23,18 @@ let isAlive = false
 let havBlackJack = false
 
 // functions
+// reset displaying cards 
+function resetGame() {
+    cards = []
+    sum = 0
+    isAlive = true
+    havBlackJack = false
+}
+
 
 function startGame() {
+    resetGame()
+    
     isAlive = true
     let firstCard = getRandomCard() 
     let secondCard = getRandomCard()
